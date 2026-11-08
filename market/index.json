@@ -69,11 +69,9 @@
       "versions": [
         {
           "version": "0.2.0",
-          "publishTimestamp": 1794156830,
+          "publishTimestamp": 1794156793,
           "source": {
-            "type": "git",
-            "url": "https://github.com/Matthew-Laplace/dsh-branch-map.git",
-            "commit": "cfa188b5bec0fa558f398d10281f726846169677"
+            "type": "npm"
           },
           "engines": {
             "dsh": ">=0.2.2-rc.1 <0.3.0"
