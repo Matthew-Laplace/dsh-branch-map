@@ -1,0 +1,85 @@
+{
+  "format": 1,
+  "title": {
+    "en": "syc-ai DSH plugins",
+    "zh": "syc-ai DSH 插件"
+  },
+  "description": {
+    "en": "Plugins for engineering conversations in DeepSeek Harness.",
+    "zh": "面向 DeepSeek Harness 工程对话的插件。"
+  },
+  "metadata": {
+    "categories": {
+      "engineering": {
+        "title": {
+          "en": "Engineering",
+          "zh": "工程"
+        }
+      }
+    },
+    "labels": {
+      "branching": {
+        "title": {
+          "en": "Branching conversation",
+          "zh": "分支对话"
+        }
+      },
+      "context-editing": {
+        "title": {
+          "en": "Context editing",
+          "zh": "上下文编辑"
+        }
+      }
+    },
+    "sortKeys": {}
+  },
+  "plugins": [
+    {
+      "name": "dsh-branch-map",
+      "title": {
+        "en": "Branch Map",
+        "zh": "分支图"
+      },
+      "description": {
+        "en": "Mainline and tree views for long engineering conversations: fork comparison, conclusion merge, context editing, and derived sessions without rewriting source sessions.",
+        "zh": "面向工程长对话的主链/树视图：分叉对比、结论回填、上下文编辑与派生会话；不改写源会话。"
+      },
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkJyYW5jaCBtYXAiPgogIDxyZWN0IHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgcng9IjgiIGZpbGw9IiMxZjJhNDQiLz4KICA8cGF0aCBkPSJNOCAyNFY5IiBmaWxsPSJub25lIiBzdHJva2U9IiM3ZmIyZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHBhdGggZD0iTTggMTNoNmEzIDMgMCAwIDAgMy0zVjkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzdmYjJmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8cGF0aCBkPSJNOCAxOWg2YTMgMyAwIDAgMSAzIDN2MSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjN2ZiMmZmIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxjaXJjbGUgY3g9IjgiIGN5PSI3IiByPSIyLjQiIGZpbGw9IiM3ZmIyZmYiLz4KICA8Y2lyY2xlIGN4PSI4IiBjeT0iMjUiIHI9IjIuNCIgZmlsbD0iIzdmYjJmZiIvPgogIDxjaXJjbGUgY3g9IjE5IiBjeT0iNyIgcj0iMi40IiBmaWxsPSIjN2ZiMmZmIi8+CiAgPGNpcmNsZSBjeD0iMTkiIGN5PSIyNSIgcj0iMi40IiBmaWxsPSIjN2ZiMmZmIi8+Cjwvc3ZnPgo=",
+      "author": "syc-ai",
+      "homepage": "https://github.com/Matthew-Laplace/dsh-branch-map",
+      "repository": {
+        "url": "https://github.com/Matthew-Laplace/dsh-branch-map"
+      },
+      "metadata": {
+        "category": "engineering",
+        "keywords": [
+          "dsh",
+          "dsh-plugin",
+          "branching-conversation",
+          "engineering",
+          "context-editing",
+          "decision-log"
+        ],
+        "labels": [
+          "branching",
+          "context-editing"
+        ],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.2.0",
+          "publishTimestamp": 1794156830,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/Matthew-Laplace/dsh-branch-map.git",
+            "commit": "cfa188b5bec0fa558f398d10281f726846169677"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.1 <0.3.0"
+          }
+        }
+      ]
+    }
+  ]
+}
