@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480" role="img" aria-label="DSH Branch Map">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101827"/>
+      <stop offset="1" stop-color="#0b1220"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6aa2ff"/>
+      <stop offset="1" stop-color="#3fb56b"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="480" fill="url(#bg)"/>
+  <g opacity="0.35" stroke="#6aa2ff" stroke-width="1">
+    <path d="M0 120 H1200 M0 240 H1200 M0 360 H1200" stroke-dasharray="2 14"/>
+    <path d="M150 0 V480 M450 0 V480 M750 0 V480 M1050 0 V480" stroke-dasharray="2 14"/>
+  </g>
+
+  <g font-family="Inter, -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Noto Sans SC', sans-serif">
+    <text x="72" y="142" fill="#eaf1ff" font-size="54" font-weight="700">DSH Branch Map</text>
+    <text x="74" y="190" fill="#9fb0cc" font-size="22">Long engineering conversations, kept as a decision tree.</text>
+    <text x="74" y="228" fill="#7185a5" font-size="17">Mainline first · fork points · conclusions · context editing · derived sessions</text>
+    <g fill="#c8d7f2" font-size="13" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+      <rect x="74" y="264" width="230" height="30" rx="8" fill="#162138" stroke="#2a3a5c"/>
+      <text x="90" y="284">npm i dsh-branch-map</text>
+    </g>
+  </g>
+
+  <g transform="translate(700 60)" filter="url(#glow)">
+    <path d="M20 360 V120" stroke="#6aa2ff" stroke-width="3" fill="none" opacity="0.9"/>
+    <path d="M20 200 C 120 200, 130 120, 240 120" stroke="#6aa2ff" stroke-width="2.5" fill="none" opacity="0.85"/>
+    <path d="M20 280 C 120 280, 130 350, 240 350" stroke="#3fb56b" stroke-width="2.5" stroke-dasharray="8 6" fill="none" opacity="0.85"/>
+
+    <g stroke-width="1.5">
+      <rect x="-38" y="86" width="116" height="68" rx="12" fill="#162138" stroke="#3d537a"/>
+      <rect x="-38" y="166" width="116" height="68" rx="12" fill="#1a2742" stroke="#6aa2ff"/>
+      <rect x="-38" y="246" width="116" height="68" rx="12" fill="#162138" stroke="#3d537a"/>
+      <rect x="-38" y="326" width="116" height="68" rx="12" fill="#162138" stroke="#3d537a"/>
+      <rect x="182" y="86" width="150" height="68" rx="12" fill="#13203a" stroke="#6aa2ff"/>
+      <rect x="182" y="316" width="150" height="68" rx="12" fill="#13251f" stroke="#3fb56b"/>
+    </g>
+
+    <g font-family="Inter, -apple-system, 'PingFang SC', sans-serif" font-size="13">
+      <text x="-24" y="116" fill="#b9c9e6">round 1</text>
+      <text x="-24" y="136" fill="#7185a5" font-size="11">context</text>
+      <text x="-24" y="196" fill="#eaf1ff">round 2</text>
+      <text x="-24" y="216" fill="#8fa6cc" font-size="11">fork point</text>
+      <text x="-24" y="276" fill="#b9c9e6">round 3</text>
+      <text x="-24" y="296" fill="#7185a5" font-size="11">mainline</text>
+      <text x="-24" y="356" fill="#b9c9e6">round 4</text>
+      <text x="-24" y="376" fill="#7185a5" font-size="11">conclusion</text>
+
+      <text x="200" y="112" fill="#6aa2ff" font-size="12" font-weight="600">branch A</text>
+      <text x="200" y="132" fill="#9fb0cc" font-size="11">conclusion back</text>
+      <text x="200" y="342" fill="#3fb56b" font-size="12" font-weight="600">branch B</text>
+      <text x="200" y="362" fill="#9fb0cc" font-size="11">new mainline</text>
+    </g>
+  </g>
+</svg>

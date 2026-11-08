@@ -1,0 +1,64 @@
+{
+  "name": "dsh-branch-map",
+  "version": "0.2.0",
+  "description": "Branch map for DSH engineering conversations: keep the mainline clean, compare forks, surface decisions, and turn conclusions back into context.",
+  "type": "module",
+  "license": "MIT",
+  "author": "syc-ai",
+  "icon": "icon.svg",
+  "homepage": "https://github.com/Matthew-Laplace/dsh-branch-map#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matthew-Laplace/dsh-branch-map.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Matthew-Laplace/dsh-branch-map/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-client-plugin",
+    "branching-conversation",
+    "conversation-visualization",
+    "engineering-decisions",
+    "context-editing",
+    "decision-log"
+  ],
+  "engines": {
+    "dsh": ">=0.2.2-rc.1 <0.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "assets/*",
+    "LICENSE",
+    "README.md"
+  ],
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-workspace"
+      ]
+    }
+  }
+}
