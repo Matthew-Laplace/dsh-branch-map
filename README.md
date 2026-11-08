@@ -51,7 +51,7 @@ This plugin adds a **Conversation View** that keeps the mainline clean while pre
 In DSH, open **Plugins**, enable **Experimental plugins → Custom plugin indexes**, then add this index URL:
 
 ```
-https://raw.githubusercontent.com/Matthew-Laplace/dsh-branch-map/main/market/index.json
+https://cdn.jsdelivr.net/gh/Matthew-Laplace/dsh-branch-map@v0.2.0/market/index.json
 ```
 
 The **Discover** tab will list `dsh-branch-map`; install it from there.
